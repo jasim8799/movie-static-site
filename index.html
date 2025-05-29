@@ -2,48 +2,138 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Download Movie App APK</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px 20px;
-      background-color: #f0f0f0;
-    }
-    button {
-      background-color: #007bff;
-      color: white;
-      padding: 15px 40px;
-      font-size: 20px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-    .instructions {
-      max-width: 600px;
-      margin: 40px auto;
-      text-align: left;
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .instructions h2 {
-      margin-bottom: 15px;
-      color: #333;
-    }
-    .instructions ul {
-      list-style-type: decimal;
-      padding-left: 20px;
-    }
-    .instructions p {
-      color: #444;
-    }
-  </style>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        padding: 40px 15px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: #fff;
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      h1 {
+        font-size: 2.8rem;
+        margin-bottom: 10px;
+        text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      }
+      p {
+        font-size: 1.1rem;
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+      }
+      button {
+        background-color: #ff6f61;
+        color: white;
+        padding: 15px 50px;
+        font-size: 1.3rem;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        margin-top: 20px;
+        box-shadow: 0 6px 12px rgba(255,111,97,0.5);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+      button:hover {
+        background-color: #e85c4f;
+        box-shadow: 0 8px 16px rgba(232,92,79,0.7);
+      }
+      .instructions {
+        max-width: 600px;
+        width: 100%;
+        margin: 40px auto;
+        text-align: left;
+        background: rgba(255, 255, 255, 0.95);
+        color: #333;
+        padding: 30px 25px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      }
+      .instructions h2 {
+        margin-bottom: 15px;
+        color: #222;
+        font-weight: 700;
+        font-size: 1.8rem;
+      }
+      .instructions ul {
+        list-style-type: decimal;
+        padding-left: 25px;
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+      .instructions p {
+        color: #444;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      .step-instructions {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+      .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+      .instruction-image {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease;
+      }
+      .instruction-image:hover {
+        transform: scale(1.05);
+      }
+      .enjoy-message {
+        font-size: 1.3rem;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 20px;
+        color: #ff6f61;
+      }
+      @media (max-width: 640px) {
+        body {
+          padding: 30px 10px;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+        button {
+          padding: 12px 40px;
+          font-size: 1.1rem;
+        }
+        .instructions {
+          padding: 20px 15px;
+          margin: 30px 10px;
+        }
+        .instructions h2 {
+          font-size: 1.5rem;
+        }
+        .instructions ul {
+          font-size: 1rem;
+        }
+        .step-instructions {
+          gap: 20px;
+        }
+        .step {
+          gap: 10px;
+        }
+        .instruction-image {
+          max-width: 100%;
+        }
+      }
+    </style>
 </head>
 <body>
   <h1>Download Movie App APK</h1>
@@ -54,13 +144,21 @@
 
   <div class="instructions">
     <h2>How to Install the APK</h2>
-    <ul>
-      <li>Download the APK file by clicking the button above.</li>
-      <li>Open your file manager and go to the "Downloads" folder.</li>
-      <li>Tap on the <strong>MoviePro.apk</strong> file to begin installation.</li>
-      <li>If prompted, allow installation from unknown sources (Settings > Security > Unknown sources).</li>
-      <li>Follow the prompts to complete the installation.</li>
-    </ul>
+    <div class="step-instructions">
+      <div class="step">
+        <img class="instruction-image" src="asset/1.jpg" alt="Step 1: Download APK" />
+        <p><strong>Step 1:</strong> Download the APK file by clicking the Install button.</p>
+      </div>
+      <div class="step">
+        <img class="instruction-image" src="asset/2.jpg" alt="Step 2: Open Downloads folder" />
+        <p><strong>Step 2:</strong> Then click on More deails</p>
+      </div>
+      <div class="step">
+        <img class="instruction-image" src="asset/3.jpg" alt="Step 3: Install APK" />
+        <p><strong>Step 3:</strong> Tap on the <strong>install without scanning</strong> file to begin installation. If prompted, allow installation from unknown sources (Settings > Security > Unknown sources). Follow the prompts to complete the installation.</p>
+      </div>
+      <p class="enjoy-message">🎉 Enjoy your new Movie App! 🎉</p>
+    </div>
 
     <h2>Is this APK Safe?</h2>
     <p>✅ Yes, this APK is 100% safe. It does not contain any viruses or harmful software.</p>
