@@ -7,7 +7,7 @@
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      padding-top: 100px;
+      padding: 50px 20px;
       background-color: #f0f0f0;
     }
     button {
@@ -18,9 +18,30 @@
       border: none;
       border-radius: 6px;
       cursor: pointer;
+      margin-top: 20px;
     }
     button:hover {
       background-color: #0056b3;
+    }
+    .instructions {
+      max-width: 600px;
+      margin: 40px auto;
+      text-align: left;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .instructions h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+    .instructions ul {
+      list-style-type: decimal;
+      padding-left: 20px;
+    }
+    .instructions p {
+      color: #444;
     }
   </style>
 </head>
@@ -30,5 +51,21 @@
   <a href="MoviePro.apk" download>
     <button>Download APK</button>
   </a>
+
+  <div class="instructions">
+    <h2>How to Install the APK</h2>
+    <ul>
+      <li>Download the APK file by clicking the button above.</li>
+      <li>Open your file manager and go to the "Downloads" folder.</li>
+      <li>Tap on the <strong>MoviePro.apk</strong> file to begin installation.</li>
+      <li>If prompted, allow installation from unknown sources (Settings > Security > Unknown sources).</li>
+      <li>Follow the prompts to complete the installation.</li>
+    </ul>
+
+    <h2>Is this APK Safe?</h2>
+    <p>✅ Yes, this APK is 100% safe. It does not contain any viruses or harmful software.</p>
+    <p>We built this app for entertainment purposes only. You can scan the APK using any antivirus tool for your peace of mind.</p>
+  </div>
 </body>
 </html>
+
